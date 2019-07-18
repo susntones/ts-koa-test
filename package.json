@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/server.js"
+    "start": "tsc && node dist/server.js",
+    "image:build": "docker build --tag ts-koa-test ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/koa-bodyparser": "^4.3.0",
     "glob": "^7.1.4",
     "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
     "koa-compose": "^4.1.0",
+    "koa-compress": "^3.0.0",
     "koa-log4": "^2.3.2",
     "koa-router": "^7.4.0",
     "log4js": "^4.5.1",
@@ -24,6 +28,7 @@
   },
   "devDependencies": {
     "@types/koa": "2.0.49",
+    "@types/koa-compress": "^2.0.9",
     "@types/koa-log4": "^2.3.1",
     "@types/koa-router": "^7.0.42",
     "@types/node": "^12.6.6",

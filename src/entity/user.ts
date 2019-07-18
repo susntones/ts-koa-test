@@ -1,10 +1,10 @@
 /**
  * Created by lei.liu on 2019/7/17
  */
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 
 @Entity()
-export class User {
+export class User extends BaseEntity {
 
     @PrimaryGeneratedColumn()
     id: number;
